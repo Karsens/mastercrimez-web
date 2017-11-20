@@ -4,6 +4,7 @@ import 'font-awesome/css/font-awesome.css';
 import 'simple-line-icons/css/simple-line-icons.css';
 import 'html5-device-mockups/dist/device-mockups.css';
 import React from 'react';
+import Helmet from 'react-helmet';
 
 import PageLayout from '../../components/PageLayout';
 import Masthead from '../../components/Masthead';
@@ -14,7 +15,6 @@ import ContactUs from '../../components/ContactUs';
 import Icon from '../../components/Icon';
 import demoScreen from './images/demo-screen-1.jpg';
 import './style.css';
-
 
 const FEATURES = [
   {
@@ -78,6 +78,8 @@ const SOCIAL_NETWORKS = [
  */
 const HomePage = () => (
   <PageLayout sections={SECTIONS}>
+    <Helmet title="Home homey" />
+
     <Masthead
       text="New Age is an app landing page that will help you beautifully showcase your new mobile app, or anything else!"
       buttonLabel="Start Now for Free!"
